@@ -4,8 +4,6 @@ GEM
     activesupport (3.0.1)
     compass (0.10.6)
       haml (>= 3.0.4)
-    grid-coordinates (1.1.3)
-      compass (>= 0.10.5)
     haml (3.0.25)
     i18n (0.4.2)
     maruku (0.6.0)
@@ -18,6 +16,8 @@ GEM
       i18n (~> 0.4.1)
       rack (~> 1.2.1)
       tzinfo (~> 0.3.23)
+    smashing-layout (0.0.2)
+      compass (>= 0.10.6)
     syntax (1.0.0)
     tzinfo (0.3.23)
 
@@ -25,7 +25,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  grid-coordinates (>= 1.1.3)
-  maruku (>= 0.6.0)
-  meyer-reset (>= 2.0.0)
-  serve (>= 1.0.0)
+  maruku (~> 0.6.0)
+  meyer-reset (~> 2.0.0)
+  serve (~> 1.0.0)
+  smashing-layout (~> 0.0.2)
