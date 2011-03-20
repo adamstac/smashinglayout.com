@@ -1,0 +1,62 @@
+// Smashing Layout
+$direction: right
+$max-width: 1200px
+$min-width: 900px
+
+// @import smashing-layout
+@import ../../extension/stylesheets/smashing-layout
+
+#header, #footer
+  +smashing-width
+
+#header
+  position: fixed
+  background: rgba(#fff,.85)
+  border-top: 3px solid #000
+  border-bottom: 1px solid #ccc
+  padding: 20px 0
+  z-index: 20
+  h1
+    color: #000
+    font-size: 20px
+    font-weight: normal
+
+#content
+  +smashing-layout
+  padding-top: 110px
+  padding-bottom: 40px
+  .max-width
+    // Stubbed out for future useage. Use as needed
+  .min-width
+    // Stubbed out for future useage. Use as needed
+  .column
+    &.primary
+      .content
+        padding-#{$direction}: 5%
+      h1
+        color: #000
+        font-size: 40px
+        font-weight: bold
+        line-height: 40px
+        letter-spacing: -1px
+        margin-bottom: 50px
+      p
+        font-size: 16px
+        line-height: 1.5
+        margin-bottom: 20px
+    &.secondary
+      h2
+        color: #000
+        font-size: 20px
+        margin-bottom: 20px
+      p
+        font-size: 14px
+        line-height: 1.8
+        margin-bottom: 18px
+
+#footer
+  background: #f4f4f4
+  border-top: 1px solid #ccc
+  font-size: 12px
+  height: 120px
+  padding: 40px 0
