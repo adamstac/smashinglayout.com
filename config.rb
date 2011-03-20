@@ -1,6 +1,6 @@
 # Compass Configuration
 
-require 'grid-coordinates'
+require 'smashing-layout'
 require 'meyer-reset'
 
 # HTTP paths
